@@ -1,2 +1,64 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<head> 
+	<title> Bitly | URL Shortener and Link Management </title>
+	<link rel="stylesheet" type="text/css" href="../css/application.css">
+</head>
+
+<body>
+
+<!--Navigation -->
+<nav id=navbar>
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Signup</a><li>
+		<ul>	
+</nav> 
+
+<!--Header-->
+
+<div class=header>
+<br>
+
+</br>
+
+			<h1>THE LINKS KNOW ALL. SO CAN YOU! </h1>
+				<h3> the Bitly clone that shortens your link and keep tracks on counts! </h3>
+				
+<br>
+
+
+</br>
+<div class=container> 	
+ 	<div id=form>
+	<!--Form--> 
+		<form action="/longlink" method="post">
+			<input type="text" name="longlink" value="Insert link to be shorten here">
+			<input type="submit" value="Shorten" />
+		</form>
+	</div>
+		</div>
+</div>
+
+<div class=container>
+	<div class=table>
+	<h2>List of all URLs in our system</h2>
+
+	<table class=table1>
+		<tr> 
+			<th class="left">No.</th>
+			<th class="left">Long URL</th>
+			<th class="left">Short URL</th>
+			<th class="center">Count</th>
+		</tr>
+		<% Url.all.each do |x| %>
+		<tr>
+			<td><%= x.id %></td>
+			<td><%= x.long_url %></td>
+			<td><a href="/<%= x.short_url %>"> <%= x.short_url %> </a></td>
+		    <td><%= x.click_count %></td>
+		<tr>
+	<% end %>
+	</table>
+	</div>
+</div>
+</body>

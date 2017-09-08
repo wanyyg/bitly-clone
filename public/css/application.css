@@ -1,0 +1,123 @@
+body {
+background-color:#f4f4f4;
+color:#555;
+margin:0;
+font-family: arial, verdana;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+a:hover{
+  color:yellow;
+}
+
+  #navbar{
+    background-color:tomato;
+    color:white;
+  
+    }
+      #navbar ul{
+        margin:0;
+        padding:5px;
+        list-style: none;
+      }
+
+        #navbar li{
+          display:inline;
+          padding-left:40px;
+          font-size: 20px;
+
+        }
+
+      h1 {
+        margin:0;
+        text-align:center;
+        font-family: arial;
+    }
+      h3 { 
+        text-align: center;
+        font-family: arial; 
+        line-height: 0.1em;
+      }
+
+      input[type=text] {
+        width: 60%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+      }
+        input[type=submit] {
+          background-color: tomato;
+          border:none;
+          border-radius: 4px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          cursor: pointer;
+          align-self: right;
+        }
+
+  .container{
+    width:80%;
+    margin:auto;
+    position: center;
+  }
+
+  h2 {
+    background-color: grey;
+    color:white;
+    margin:0;
+    padding:20px;
+
+  }
+  .table {
+    text-align:center;
+  }
+      .table1 {
+        font-family: arial, sans-serif;
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+        th {
+        background-color: tomato;
+        color: white;
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+
+        td {
+          background-color: white;
+          color: black;
+          border: 1px solid tomato;
+          text-align: left;
+          padding: 8px;
+        }
+
+        .header{
+          width:1020px;
+          height:400px;
+          margin:0;
+          align-self: center;
+          background-image:url('../img/banner1.jpeg');
+          background-position:center;
+          background-repeat: no-repeat;
+          color: grey;
+          width: 100%
+          }     
+
+         #form {
+          text-align: center;
+         }
